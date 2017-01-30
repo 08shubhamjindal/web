@@ -5,12 +5,33 @@
 <body>
 	    <div id="page">
         <form id="messageForm">
-        <h2>ASCII</h2>
+        <center><h2>ASCII</h2>
   	    <textarea id="message"></textarea>
         <div id="charactersLeft">180 characters</div>
         <div id="lastKey"></div>
+        </center>
         </form>
         </div>
+        <style>
+        h2, #charactersLeft,#lastKey{
+          font-family: sans-serif;
+          font-size: 20px;
+          }
+        #message{
+          margin-top: 20px;
+          border-radius: 20px;
+          border-color:black;
+          background-color: teal;
+          font-size: 20px;
+           }
+           body{
+
+             background-color: #1976d2;
+           }
+        .f{
+         margin-bottom: 380px; 
+        }
+        </style>
 <script>
 var el;                                                   
 function charCount(e){                                    
@@ -25,5 +46,11 @@ function charCount(e){
 el = document.getElementById('message');                   
 el.addEventListener('keyup', charCount, false);
 </script>
+            <script>
+            var today = new Date();
+            var year = today.getFullYear();
+            document.write('<p class="f"><center>        Copyright &copy;' +year+ '</p><br/>' + ' SHUBHAM JINDAL</center>');
+            </script>
+
 </body>
 </head>
