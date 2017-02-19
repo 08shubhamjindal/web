@@ -1,22 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>7up7down</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+<title>7up7down</title>
 </head>
 <body>
+      <select id= "m" onChange="myFunction">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">no--7</option>
+      <option value="2">7 down</option>
+      <option value="3">7 up</option>
+    </select>
 <p>roll your dice</p>
-
 <button onclick="myFunction()">ROLL</button>
-
 <p id="demo"></p>
-
 <script>
 function myFunction() {
+
+    var s = document.getElementById('m');
+    var sv = s.options[s.selectedIndex].value;
     var x = Math.floor((Math.random() * 12) + 2);
     document.getElementById("demo").innerHTML = x;
+if(sv==1)
+    {
+    	if(x==7){
+    		document.write("your no is seven<br/>");
+	        document.write("and your no is" + " " + x + "<br/>");
+	        document.write("you won");
+                }
+        if(x<7)
+        {
+        document.write("your no is less than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you lose");
+        }        
+        if(x>7)
+        {
+        	document.write("your no is greater than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you lose");
+        }
+        else{}
+    }
+if(sv==2)
+    {
+    if(x==7){
+    		document.write("your no is seven<br/>");
+	        document.write("and your no is" + " " + x + "<br/>");
+	        document.write("you lose");
+                }
+        if(x<7)
+        {
+        document.write("your no is less than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you won");
+        }        
+        if(x>7)
+        {
+        document.write("your no is greater than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you lose");
+        }
+        else{}	
+    }
+if(sv==3)
+{
+	if(x==7){
+    		document.write("your no is seven<br/>");
+	        document.write("and your no is" + " " + x + "<br/>");
+	        document.write("you lose");
+                }
+        if(x<7)
+        {
+        document.write("your no is less than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you lose");
+        }        
+        if(x>7)
+        {
+        	document.write("your no is greater than seven<br/>");
+		document.write("and your no is" + " " + x + "<br/>");
+		document.write("you won");
+        }
+        else{}
+}
+else{}
 }
 </script>
-
-	</body>
-	</html>
+</body>
+</html>
