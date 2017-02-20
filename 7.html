@@ -16,6 +16,7 @@
 <script>
 function myFunction() {
 
+     var value = 250;
     var s = document.getElementById('m');
     var sv = s.options[s.selectedIndex].value;
     var x = Math.floor((Math.random() * 12) + 2);
@@ -25,19 +26,25 @@ if(sv==1)
     	if(x==7){
     		document.write("your no is seven<br/>");
 	        document.write("and your no is" + " " + x + "<br/>");
-	        document.write("you won");
+	        document.write("you won<br/>");
+            value=value+25;
+            document.write("your total is" + value);
                 }
         if(x<7)
         {
         document.write("your no is less than seven<br/>");
 		document.write("and your no is" + " " + x + "<br/>");
 		document.write("you lose");
-        }        
+        value=value-25;
+        document.write("your total is" + value);      
+          }        
         if(x>7)
         {
         	document.write("your no is greater than seven<br/>");
 		document.write("and your no is" + " " + x + "<br/>");
 		document.write("you lose");
+        value=value-25;
+        document.write("your total is" + value);
         }
         else{}
     }
@@ -47,18 +54,24 @@ if(sv==2)
     		document.write("your no is seven<br/>");
 	        document.write("and your no is" + " " + x + "<br/>");
 	        document.write("you lose");
+            value=value-25;
+            document.write("your total is" + value);
                 }
         if(x<7)
         {
         document.write("your no is less than seven<br/>");
 		document.write("and your no is" + " " + x + "<br/>");
 		document.write("you won");
+        value=value+25;
+        document.write("your total is" + value);
         }        
         if(x>7)
         {
         document.write("your no is greater than seven<br/>");
 		document.write("and your no is" + " " + x + "<br/>");
 		document.write("you lose");
+        value=value-25;
+        document.write("your total is" + value);
         }
         else{}	
     }
@@ -68,18 +81,24 @@ if(sv==3)
     		document.write("your no is seven<br/>");
 	        document.write("and your no is" + " " + x + "<br/>");
 	        document.write("you lose");
+            value=value-25;
+            document.write("your total is" + value);
                 }
         if(x<7)
         {
         document.write("your no is less than seven<br/>");
 		document.write("and your no is" + " " + x + "<br/>");
 		document.write("you lose");
+        value=value-25;
+        document.write("your total is" + value);
         }        
         if(x>7)
         {
         	document.write("your no is greater than seven<br/>");
 		document.write("and your no is" + " " + x + "<br/>");
 		document.write("you won");
+        value=value+25;
+        document.write("your total is" + value);
         }
         else{}
 }
