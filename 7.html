@@ -13,6 +13,7 @@
 <p>roll your dice</p>
 <button onclick="myFunction()">ROLL</button>
 <p id="demo"></p>
+<p id="y"></p>
 <script>
 function myFunction() {
 
@@ -21,6 +22,7 @@ function myFunction() {
     var sv = s.options[s.selectedIndex].value;
     var x = Math.floor((Math.random() * 12) + 2);
     document.getElementById("demo").innerHTML = x;
+    
 if(sv==1)
     {
     	if(x==7){
@@ -30,7 +32,7 @@ if(sv==1)
             value=value+25;
             document.write("your total is" + value);
                 }
-        if(x<7)
+        aif(x<7)
         {
         document.write("your no is less than seven<br/>");
 		document.write("and your no is" + " " + x + "<br/>");
@@ -104,6 +106,60 @@ if(sv==3)
 }
 else{}
 }
+
+</script>
+<script>
+if(x==2)
+{
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_2-128.png" />');
+}
+if(x==3)
+{
+    document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_3-128.png" />');
+}
+if(x==4)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128y.png" />');
+}
+if(x==5)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+}
+if(x==6)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+}
+if(x==7)
+{
+   document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_1-128.png" />');
+}
+if(x==8)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+   document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+}
+if(x==9)
+{
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
+}
+if(x==10)
+document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+}
+if(x==11)
+{
+   document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+  document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
+}
+if(x==12)
+{
+  document.write( '<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+  document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_6-128.png" />');
+}
+else
+{}
 </script>
 </body>
 </html>
