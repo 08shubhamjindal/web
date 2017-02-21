@@ -16,13 +16,12 @@
 <p id="y"></p>
 <script>
 function myFunction() {
-
-     var value = 250;
+    var value = 250;
     var s = document.getElementById('m');
     var sv = s.options[s.selectedIndex].value;
     var x = Math.floor((Math.random() * 12) + 2);
     document.getElementById("demo").innerHTML = x;
-    
+
 if(sv==1)
     {
     	if(x==7){
@@ -32,13 +31,13 @@ if(sv==1)
             value=value+25;
             document.write("your total is" + value);
                 }
-        aif(x<7)
+        if(x<7)
         {
         document.write("your no is less than seven<br/>");
 		document.write("and your no is" + " " + x + "<br/>");
 		document.write("you lose");
         value=value-25;
-        document.write("your total is" + value);      
+        document.write("your total is" + value);     
           }        
         if(x>7)
         {
@@ -46,7 +45,7 @@ if(sv==1)
 		document.write("and your no is" + " " + x + "<br/>");
 		document.write("you lose");
         value=value-25;
-        document.write("your total is" + value);
+        document.write("your total is" + value); 
         }
         else{}
     }
@@ -57,7 +56,7 @@ if(sv==2)
 	        document.write("and your no is" + " " + x + "<br/>");
 	        document.write("you lose");
             value=value-25;
-            document.write("your total is" + value);
+            document.write("your total is" + value);  
                 }
         if(x<7)
         {
@@ -73,7 +72,7 @@ if(sv==2)
 		document.write("and your no is" + " " + x + "<br/>");
 		document.write("you lose");
         value=value-25;
-        document.write("your total is" + value);
+        document.write("your total is" + value); 
         }
         else{}	
     }
@@ -84,7 +83,7 @@ if(sv==3)
 	        document.write("and your no is" + " " + x + "<br/>");
 	        document.write("you lose");
             value=value-25;
-            document.write("your total is" + value);
+            document.write("your total is" + value);   
                 }
         if(x<7)
         {
@@ -92,7 +91,7 @@ if(sv==3)
 		document.write("and your no is" + " " + x + "<br/>");
 		document.write("you lose");
         value=value-25;
-        document.write("your total is" + value);
+        document.write("your total is" + value);  
         }        
         if(x>7)
         {
@@ -105,10 +104,6 @@ if(sv==3)
         else{}
 }
 else{}
-}
-
-</script>
-<script>
 if(x==2)
 {
 document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_2-128.png" />');
@@ -145,6 +140,7 @@ if(x==9)
     document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
 }
 if(x==10)
+{
 document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
     document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_5-128.png" />');
 }
@@ -160,6 +156,7 @@ if(x==12)
 }
 else
 {}
+}
 </script>
 </body>
 </html>
