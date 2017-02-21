@@ -2,18 +2,20 @@
 <html>
 <head>
 <title>7up7down</title>
+<link rel="stylesheet" type="text/css" href="7.css">
 </head>
 <body>
       <select id= "m" onChange="myFunction">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">no--7</option>
-      <option value="2">7 down</option>
-      <option value="3">7 up</option>
-    </select>
-<p>roll your dice</p>
-<button onclick="myFunction()">ROLL</button>
+      <option value="" disabled selected>Choose Your Option</option>
+      <option value="1">No--7</option>
+      <option value="2">7 Down</option>
+      <option value="3">7 Up</option>
+  </select>
+<center><p>Roll Your Dice</p></center>
+<center><button onclick="myFunction()">ROLL</button></center>
 <p id="demo"></p>
 <p id="y"></p>
+<div id="cloud-scroll"></div>
 <script>
 function myFunction() {
     var value = 250;
@@ -114,7 +116,7 @@ if(x==3)
 }
 if(x==4)
 {
-    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128y.png" />');
+    document.write('<img src="https://cdn3.iconfinder.com/data/icons/dice-1/100/Dice_white_4-128.png" />');
 }
 if(x==5)
 {
@@ -158,5 +160,12 @@ else
 {}
 }
 </script>
+            
+            <script>
+            var today = new Date();
+            var year = today.getFullYear();
+            document.write('<font color="teal"><p id="f"><center>&copy;'+year+'|&lt;SHUBHAM JINDAL&gt;</p></center></font>');
+            </script>
+
 </body>
 </html>
