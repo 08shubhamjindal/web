@@ -77,3 +77,14 @@ body {
 {
 	animation: circle 1s infinite linear;
 }
+.bar{
+	width: 40px;
+	height: 40px;
+    position: absolute;
+    font-size: 100px;
+    animation: mymove 5s infinite linear;
+}
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 500px;}
+}
