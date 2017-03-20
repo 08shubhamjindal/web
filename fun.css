@@ -1,0 +1,79 @@
+@keyframes rot {
+	from {
+		transform: rotate(0deg)
+		           translate(-150px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-150px) 
+		           rotate(-360deg);
+	}
+}
+.smile{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin: -20px;
+	font-size: 100px;
+	animation: rot 3s infinite linear;
+}
+.smile1{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin: -20px;
+	font-size: 100px;
+	animation: rots 3s infinite linear;
+}
+@keyframes rots {
+	from {
+		transform: rotate(0deg)
+		           translate(-150px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-150px) 
+		           rotate(-360deg);
+	}
+}
+
+body {
+  background: #fff;
+}
+@keyframes circle {
+	from {
+		transform: scale(0)
+	}
+	to {
+		transform: scale(5)
+	}
+}
+.circle {
+  margin: 0 auto;
+  width:  20px;
+  height: 20px;
+  border: 1px solid CadetBlue;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+.one {
+  animation: circle 4s infinite linear;
+}
+.two {
+  animation: circle 3s infinite linear;
+}
+.three {
+  animation: circle 2s infinite linear;
+}
+.four
+{
+	animation: circle 1s infinite linear;
+}
