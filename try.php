@@ -27,4 +27,13 @@
 			print '<p style="color:red;">please enter a valid quantity</p>';
 		}
 	}
-?>	</body>
+?>
+<form action = "try.php" method="post">
+	<p>quantity:<input type="text" name="quantity" size="3"/></p>
+		<p>price:<input type="text" name="price" size="5"/></p>
+		<input type ="submit" name="submit" value="calc"/>
+		<input type ="hidden" name="submitted" value ="true" />
+	</form>
+ 
+	</body>
+	</html>
