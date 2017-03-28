@@ -25,7 +25,7 @@
 			}
               else
               {
-              	print '<p style="color:red;">please enter a quote';
+              	print '<p style="color:red;">please enter a quote</p>';
               }	
 		}
 		?>
