@@ -5,7 +5,7 @@
 	<head></head>
 	<body>
 		<?php
-		if (isset($_POST['submitted'])) 
+		if (isset($_POST[ 'submitted'])) 
 		{
 			if (!empty($_POST['quote']) && ($_POST['quote'] !='enter quote here') ) 
 			{
@@ -15,7 +15,7 @@
 		 			flock($fp, LOCK_EX);
 					fwrite($fb,"{$_POST['quote']}");
 	                flock($fp, LOCK_UN);
-					fclose($fb);
+					fclose($fp);
 					print "<p> your quote has been stored</p>"; 
 				}
 				else
